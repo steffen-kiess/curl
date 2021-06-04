@@ -2436,7 +2436,8 @@ const struct Curl_ssl Curl_ssl_schannel = {
   Curl_none_false_start,             /* false_start */
   schannel_sha256sum,                /* sha256sum */
   NULL,                              /* associate_connection */
-  NULL                               /* disassociate_connection */
+  NULL,                              /* disassociate_connection */
+  NULL                               /* get_tls_server_end_point */
 };
 
 #endif /* USE_SCHANNEL */
