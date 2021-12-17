@@ -668,7 +668,8 @@ const struct Curl_ssl Curl_ssl_mesalink = {
   Curl_none_false_start,         /* false_start */
   NULL,                          /* sha256sum */
   NULL,                          /* associate_connection */
-  NULL                           /* disassociate_connection */
+  NULL,                          /* disassociate_connection */
+  NULL                           /* get_tls_server_end_point */
 };
 
 #endif
